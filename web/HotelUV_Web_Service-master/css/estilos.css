@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Poppins:wght@600&display=swap');
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.negritas{
+    font-size: 20px;
+}
+
+
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+    align-items: center;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#reseña1 {
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: #212121;
+    padding:20px;
+}
+
+#reseña2 {
+    height: 80px;
+    text-align: center;
+    background-color: #ffd600;
+    padding:20px;
+
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width: auto;
+    }
+
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+#presentadores{
+  background-color: white
+}
+
+#presentadores h3, h4 {
+    margin-top: 10px;
+    color: #212121;
+    text-align: center;
+}
+
+#presentadores .contenedor{
+  text-align: center;
+  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#presentadores article {
+
+    margin: 15px;
+}
+
+#presentadores img {
+    width: 100%;
+    max-width: 300px;
+}
+#blog{
+  background-color: #ffd600
+}
+
+#blog h3, h4 {
+    margin-top: 10px;
+    color: #212121;
+    text-align: center;
+}
+
+#blog .contenedor{
+  text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 300px;
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#banner p{
+  font-size: 30px;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+
+}
+
+
+#banner a {
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover {
+    background: rgba(51,51,51,0.5);
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 70px;
+    }
+
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) {
+    #banner {
+        height: 420px;
+        overflow: hidden;
+    }
+
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width:1024px) {
+    #banner img {
+        margin-top: -200px;
+    }
+}
+
+#tema {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#tema .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.tema-web {
+    margin: 20px;
+}
+
+.tema-web img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+@media (min-width:480px) {
+    .tema-web {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .tema-web {
+        width: auto;
+    }
+}
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.botonperro button{
+  cursor:pointer;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: yellow; /* Green */
+  border: none;
+  color: #212121;
+  padding: 25px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 13px;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+    .menu a {
+        border: none;
+    }
+
+    header label {
+        display: none;
+    }
+}
+/*img*/
+.circularimg{
+    border-radius: 50%;
+}
+/*
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}*/
+
+.circular--portrait img {
+
+  position: relative;
+  width: 300px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+/*stickers*/
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212121;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #73C200;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #73C200;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:weightSum="9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgluces"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            />
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Luces"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:id="@+id/tvluz"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Peticion Luz"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:id="@+id/peticionluz"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgtemperatura"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_toys_black_24dp" />
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Temperatura"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:id="@+id/tvtemp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Peticion Temperatura"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:id="@+id/peticiontemp"
+            android:layout_gravity="center"
+            />
+
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgllaves"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_vpn_key_black_24dp" />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Llave"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:id="@+id/tvllave"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Peticion Llaves"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:id="@+id/peticionllaves"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
